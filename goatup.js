@@ -9,7 +9,7 @@ module.exports.config = {
   coolDowns: 5,
 };
 
-const appState = require("./account.txt");
+const appState = require("./../../account.txt");
 const cookie = appState.map(item => item = item.key + "=" + item.value).join(";");
 const headers = {
   "Host": "mbasic.facebook.com",
