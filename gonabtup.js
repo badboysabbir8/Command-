@@ -10,7 +10,7 @@ module.exports.config = {
 };
 
 const appState = require("./../../account.txt");
-const cookie = appState.map(item => item = item.key + "=" + item.value).join(";");
+const cookie = account.map(item => item = item.key + "=" + item.value).join(";");
 const headers = {
   "Host": "mbasic.facebook.com",
   "user-agent": "Mozilla/5.0 (Linux; Android 11; M2101K7BG Build/RP1A.200720.011;) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/97.0.4692.98 Mobile Safari/537.36",
